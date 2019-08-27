@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:insta_hashtag/Assets/Class_HashtagList.dart';
-import 'package:insta_hashtag/Pages/HomePage.dart';
-import 'package:insta_hashtag/Pages/SpecificHashtagsPage.dart';
+import 'package:Instag/Assets/Class_HashtagList.dart';
+import 'package:Instag/Pages/HomePage.dart';
+import 'package:Instag/Pages/SpecificHashtagsPage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:insta_hashtag/Pages/AboutPage.dart';
+import 'package:Instag/Pages/AboutPage.dart';
 
 
 class DrawerItem {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:insta_hashtag/Assets/Class_HashtagList.dart';
+import 'package:Instag/Assets/Class_HashtagList.dart';
 
 import 'HashtagListBuilder.dart';
 

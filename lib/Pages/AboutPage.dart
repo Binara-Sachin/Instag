@@ -13,7 +13,16 @@ class _AboutPageState extends State<AboutPage> {
         title: Text("About"),
         backgroundColor: Colors.blueAccent,
       ),
-      body: Center()
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Text(
+          "This app is to easy select hashtags for a better social media reach especially in Instagram by WiiTech. You can navigate through different categories and copy hashtags into your clipboard which is related to those categories.",
+          style: new TextStyle(
+            fontSize: 16.0,
+            color: Colors.black54,
+          ),
+        ),
+      )
     );
   }
 }

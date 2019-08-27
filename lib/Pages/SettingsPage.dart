@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:insta_hashtag/Libraries/NavigationDrawerBuilder.dart';
-import 'package:insta_hashtag/Pages/AboutPage.dart';
+import 'package:Instag/Libraries/NavigationDrawerBuilder.dart';
+import 'package:Instag/Pages/AboutPage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatefulWidget {

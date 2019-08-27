@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:insta_hashtag/Assets/Variable_currentClipboardData.dart';
+import 'package:Instag/Assets/Variable_currentClipboardData.dart';
 
 class HashtagListBuilder extends StatefulWidget {
   final List<String> hashtagList;

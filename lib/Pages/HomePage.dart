@@ -4,12 +4,12 @@ import 'package:http/http.dart' as http;
 
 import 'package:flutter/material.dart';
 
-import 'package:insta_hashtag/Assets/Class_HashtagList.dart';
-import 'package:insta_hashtag/Assets/Variable_currentClipboardData.dart';
+import 'package:Instag/Assets/Class_HashtagList.dart';
+import 'package:Instag/Assets/Variable_currentClipboardData.dart';
 
-import 'package:insta_hashtag/Libraries/ExpansionViewBuilder.dart';
-import 'package:insta_hashtag/Libraries/NavigationDrawerBuilder.dart';
-import 'package:insta_hashtag/Pages/SettingsPage.dart';
+import 'package:Instag/Libraries/ExpansionViewBuilder.dart';
+import 'package:Instag/Libraries/NavigationDrawerBuilder.dart';
+import 'package:Instag/Pages/SettingsPage.dart';
 
 import 'SpecificHashtagsPage.dart';
 
@@ -113,7 +113,7 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.blueAccent,
-        title: new Text("Insta Hashtags"),
+        title: new Text("Instag"),
         actions: <Widget>[
           IconButton(
             icon: Icon(

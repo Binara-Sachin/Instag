@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:insta_hashtag/Libraries/HashtagListBuilder.dart';
-import 'package:insta_hashtag/Libraries/NavigationDrawerBuilder.dart';
+import 'package:Instag/Libraries/HashtagListBuilder.dart';
+import 'package:Instag/Libraries/NavigationDrawerBuilder.dart';
 
 class SpecificHashtagsPage extends StatefulWidget {
   final String pageTitle;
