@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:Instag/Libraries/AdmobLibraries.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:flutter/material.dart';
@@ -8,7 +9,6 @@ import 'package:Instag/Assets/Class_HashtagList.dart';
 import 'package:Instag/Assets/Variable_currentClipboardData.dart';
 
 import 'package:Instag/Libraries/ExpansionViewBuilder.dart';
-import 'package:Instag/Libraries/NavigationDrawerBuilder.dart';
 import 'package:Instag/Pages/SettingsPage.dart';
 
 import 'SpecificHashtagsPage.dart';
@@ -71,11 +71,13 @@ class HomePageState extends State<HomePage> {
   }
 
   _onPushRefresh() {
+    /*
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => HomePage(result: fetchData())),
-      
+      MaterialPageRoute(builder: (context) => HomePage(result: fetchData(), key: UniqueKey(),)),
     );
+    */
+    Navigator.pushReplacementNamed(context, "/home");
   }
 
   @override
@@ -126,7 +128,6 @@ class HomePageState extends State<HomePage> {
           Container(width: 15.0),
         ],
       ),
-      drawer: NavigationDrawerBuilder(),
       body: Center(
         child: FutureBuilder<String>(
           future: widget.result,
@@ -135,7 +136,13 @@ class HomePageState extends State<HomePage> {
               print(snapshot.data);
 
               if (snapshot.data == "Parse successful"){
-                return ExpansionViewBuilder();
+                return ListView(
+                  shrinkWrap: true,
+                  children: <Widget>[
+                    ExpansionViewBuilder(),
+                    showBannerAd(),
+                  ],
+                );
               }
               else if (snapshot.hasError) {
                 print("${snapshot.error}");

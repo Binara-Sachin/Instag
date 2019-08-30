@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:Instag/Libraries/HashtagListBuilder.dart';
-import 'package:Instag/Libraries/NavigationDrawerBuilder.dart';
 
 class SpecificHashtagsPage extends StatefulWidget {
   final String pageTitle;
@@ -21,7 +20,6 @@ class _SpecificHashtagsPageState extends State<SpecificHashtagsPage> {
         backgroundColor: Colors.blueAccent,
         title: Text(widget.pageTitle),
       ),
-      drawer: NavigationDrawerBuilder(),
       body: ListView(
         padding: EdgeInsets.all(10.0),
         children: <Widget>[

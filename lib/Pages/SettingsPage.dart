@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:Instag/Libraries/NavigationDrawerBuilder.dart';
 import 'package:Instag/Pages/AboutPage.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -16,7 +15,6 @@ class _SettingsPageState extends State<SettingsPage> {
         title: Text("Settings"),
         backgroundColor: Colors.blueAccent,
       ),
-      drawer: NavigationDrawerBuilder(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
@@ -56,7 +54,7 @@ class _SettingsPageState extends State<SettingsPage> {
             Padding(
               padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 0.0),
               child: Text(
-                "Wii Tech",
+                "WiiTech",
                 style: TextStyle(
                   fontSize: 15.0,
                   color: Colors.lightBlueAccent,
@@ -66,7 +64,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             ListTile(
               title: Text(
-                "About Us",
+                "About",
                 style: TextStyle(fontSize: 16.0),
               ),
               onTap: () => Navigator.push(

@@ -1,8 +1,13 @@
+import 'package:admob_flutter/admob_flutter.dart';
 import 'package:flutter/material.dart';
 
+import 'Libraries/AdmobLibraries.dart';
 import 'Pages/HomePage.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  Admob.initialize(getAppId());
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -24,6 +29,9 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
       ),
       home: HomePage(result: fetchData()),
+      routes: {
+        "/home": (_) => new HomePage(result: fetchData()),
+      },
     );
   }
 }
