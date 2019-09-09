@@ -52,7 +52,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             Divider(),
             Padding(
-              padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 0.0),
+              padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 2.0),
               child: Text(
                 "WiiTech",
                 style: TextStyle(

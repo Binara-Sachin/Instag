@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:Instag/Libraries/AdmobLibraries.dart';
+//import 'package:Instag/Libraries/AdmobLibraries.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:flutter/material.dart';
@@ -71,12 +71,6 @@ class HomePageState extends State<HomePage> {
   }
 
   _onPushRefresh() {
-    /*
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => HomePage(result: fetchData(), key: UniqueKey(),)),
-    );
-    */
     Navigator.pushReplacementNamed(context, "/home");
   }
 
@@ -140,7 +134,7 @@ class HomePageState extends State<HomePage> {
                   shrinkWrap: true,
                   children: <Widget>[
                     ExpansionViewBuilder(),
-                    showBannerAd(),
+                    //showBannerAd(),
                   ],
                 );
               }
